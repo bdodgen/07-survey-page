@@ -7,5 +7,114 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Feedback Form</h1>
+    <section class="container">
+      <form
+        action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php"
+        class="form"
+      >
+        <h3 class="container__form__name-input-header form-header">NAME</h3>
+        <input
+          type="text"
+          id="name-input"
+          name="address[city]"
+          value=""
+          placeholder=""
+        />
+        <h3 class="container__form__email-header form-header">EMAIL</h3>
+        <input type="text" id="email" name="email" value="" placeholder="" />
+        <h3 class="container__batch-header form-header">CHOOSE BATCH</h3>
+        <select id="batch" name="batch">
+          <option value="fall-2022" selected="selected">FALL 2022</option>
+          <option value="winter-2022">WINTER 2022</option>
+          <option value="spring-2023">SPRING 2023</option>
+        </select>
+        <div class="container__form__completed-wk1">
+          <h3 class="container__form__completed-wk1__header form-header">
+            DID YOU COMPLETE THE EXERCISES FROM WEEK 1?
+          </h3>
+          <div class="container__form__completed-wk1__answer">
+            <input
+              type="radio"
+              id="completed-wk1-yes"
+              name="completed-wk1"
+              value="1"
+              checked
+            />
+            <label for="completed-wk1__yes">Yes</label>
+          </div>
+          <div class="container__form__completed-wk1__answer">
+            <input
+              type="radio"
+              id="completed-wk1-no"
+              name="completed-wk1"
+              value="0"
+            />
+            <label for="completed-wk1__no">No</label>
+          </div>
+        </div>
+        <h3 class="container__form__fave-exercises-header form-header">
+          CHOOSE YOUR FAVORITE EXERCISES
+        </h3>
+        <input
+          type="checkbox"
+          id="fave-exercise-css-selectors"
+          name="css-selectors"
+          value="0"
+        />
+        <label for="fave-exercise-css-selectors">CSS Selectors</label>
+        <input
+          type="checkbox"
+          id="fave-exercise-book-page"
+          name="book-page"
+          value="0"
+        />
+        <label for="fave-exercise-book-page">Book Page</label>
+        <input
+          type="checkbox"
+          id="fave-exercise-belfast"
+          name="belfast"
+          value="0"
+        />
+        <label for="fave-exercise-belfast"
+          >Belfast International Kindergarten</label
+        >
+        <input
+          type="checkbox"
+          id="fave-exercise-crownsnest"
+          name="crownsnest"
+          value="0"
+        />
+        <label for="fave-exercise-crownsnest">Crownsnest Retreat</label>
+        <input
+          type="checkbox"
+          id="fave-exercise-google-page"
+          name="google-page"
+          value="0"
+        />
+        <label for="fave-exercise-google-page">Google Page</label>
+        <input
+          type="checkbox"
+          id="fave-exercise-documentation-page"
+          name="documentation-page"
+          value="0"
+        />
+        <label for="fave-exercise-documentation-page">Documentation Page</label>
+        <input
+          type="checkbox"
+          id="fave-exercise-aneta"
+          name="aneta"
+          value="0"
+        />
+        <label for="fave-exercise-aneta">Aneta Webbie Personal Portfolio</label>
+        <h3 class="container__form__feedback-header form-header">
+          WRITE FEEDBACK
+        </h3>
+        <textarea id="feedback" name="feedback" placeholder="Insert text here">
+        </textarea>
+        <input type="submit" value="Submit" name="submit" />
+      </form>
+    </section>
+  </body>
 </html>
